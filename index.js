@@ -1,4 +1,5 @@
 const containerEl = document.querySelector(".container");
+
 const phrases = ["Be kind to yourself", "Everything is going to be alright",
   "Be patient", "Have a hope"];
 
@@ -14,7 +15,7 @@ function updateText() {
 
   if (characterIndex === phrases[phraseIndex].length) {
     phraseIndex++;
-    phraseIndex = 0;
+    characterIndex = 0;
   }
 
   if (phraseIndex === phrases.length) {
